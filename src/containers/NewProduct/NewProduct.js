@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {submitNewProduct} from "../../api";
+import { useForm, useField, splitFormProps } from "react-form";
 
 
 const NewProduct = () => {
