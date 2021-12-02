@@ -1,23 +1,29 @@
-html,
-input,
-button {
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-div {
-    margin: 0 0 1rem;
-}
-
-input,
-textarea,
-button {
+.field {
     padding: 0.3rem;
-    border: solid 2px black;
+    border: solid 2px;
     border-radius: 0.2rem;
 }
 
-textarea {
-    width: 300px;
-    height: 150px;
+.basic {
+    margin: 0 0 1rem;
+    font-size: 20px;
+
 }
+
+.form-title {
+    font-size: 30px;
+}
+
+.input-field {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    align-items: center;
+    padding: 10px 0;
+    margin: 2px;
+
+}
+
+.submit-button {
+    font-size: 20px;
+}
+
