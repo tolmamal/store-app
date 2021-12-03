@@ -5,9 +5,6 @@ import "./NewProduct.css";
 
 
 
-
-
-
 const NewProduct = () => {
     const [name, setName] = useState('');
     const [price, setPrice] = useState();
@@ -22,16 +19,16 @@ const NewProduct = () => {
     const validatePrice = (value) => {
         // const [error, setError] = useState('');
         let error;
-        const regex = '^\d{0,8}(\.\d{1,4})?$';
+        // const regex = '^\d{0,8}(\.\d{1,4})?$';
 
         if (!value) {
             // setError('Price is required!');
             error = 'Price is required!';
         }
-        else if (!(value.match(regex))) {
-            // setError('Price must be a pattern of: [number].[number]');
-            error = 'Price must be a pattern of: [number].[number]';
-        }
+        // else if (!(value.match(regex))) {
+        //     // setError('Price must be a pattern of: [number].[number]');
+        //     error = 'Price must be a pattern of: [number].[number]';
+        // }
         console.log("error: " + error);
         return error;
 

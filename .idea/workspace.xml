@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="67143853-1686-4349-bb98-0bb07ca7abb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/NewProduct/NewProduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NewProduct/NewProduct.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/NewProduct/NewProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NewProduct/NewProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/SearchProduct/SearchProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SearchProduct/SearchProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../store-app-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -107,7 +105,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.npm run start">
@@ -156,7 +154,8 @@
       <workItem from="1638115616699" duration="3130000" />
       <workItem from="1638118862777" duration="1157000" />
       <workItem from="1638120073843" duration="9576000" />
-      <workItem from="1638440871108" duration="13782000" />
+      <workItem from="1638440871108" duration="14085000" />
+      <workItem from="1638522369397" duration="1568000" />
     </task>
     <servers />
   </component>
