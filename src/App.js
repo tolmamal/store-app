@@ -16,7 +16,6 @@ function AppRouter() {
                     <Route path="/searchprod" element={<SearchProduct/>}/>
                 </Routes>
             </div>
-
         </Router>
     );
 }

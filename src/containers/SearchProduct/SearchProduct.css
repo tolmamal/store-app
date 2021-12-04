@@ -1,3 +1,24 @@
 .main-title {
     font-size: 30px;
 }
+
+.input-field {
+    align-items: center;
+    padding: 10px 0;
+    margin: 2px;
+}
+
+.field {
+    padding: 0.3rem;
+    border: solid 2px;
+    border-radius: 0.2rem;
+}
+
+.test-button {
+    background-color: aquamarine;
+    font-size: larger;
+}
+
+.error {
+    color: red;
+}

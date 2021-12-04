@@ -15,26 +15,38 @@ const NewProduct = () => {
         console.log({result});
     };
 
-    //TODO: fix REGEX - its not fit
-    const validatePrice = (value) => {
-        // const [error, setError] = useState('');
-        let error;
-        // const regex = '^\d{0,8}(\.\d{1,4})?$';
+    const validateName = (value) => {
+      let error = ' ';
+      let specialChars = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
-        if (!value) {
-            // setError('Price is required!');
-            error = 'Price is required!';
-        }
-        // else if (!(value.match(regex))) {
-        //     // setError('Price must be a pattern of: [number].[number]');
-        //     error = 'Price must be a pattern of: [number].[number]';
-        // }
-        console.log("error: " + error);
-        return error;
-
+      if (!value) {
+          error = 'Error occurred: product name is required!';
+      }
+      else {
+          if (!(value.match("^[a-zA-Z]([^A-Za-z0-9])*"))) {
+              error = 'Error occurred: product name must start with a letter!';
+          }
+          if (specialChars.test(value)) {
+              error = 'Error occurred: no special chars!';
+          }
+      }
+      return error;
     };
 
 
+    const validatePrice = (value) => {
+        let error = '';
+        const regex = '^[+-]?([0-9]+([.][0-9]*)?|[.][0-9]+)$';
+        if (!value) {
+            error = 'Error occurred: price is required!';
+        }
+        else if (!(value.match(regex))) {
+            error = 'Error occurred: price must be a pattern of numbers';
+        }
+        return error;
+    };
+
+    //TODO: add msg to the user - on success
     const Basic = () => (
         <div className="basic">
             <Formik
@@ -43,36 +55,45 @@ const NewProduct = () => {
                     productPrice: ''
                 }}
                 onSubmit={async (values) => {
-                    console.log("values stringify: " + JSON.stringify(values));
-                    console.log("productName: " + values.productName);
-                    console.log("productPrice: " + values.productPrice);
-
                     await submitNewProduct(values.productName, values.productPrice);
+                    console.log("product added successfully");
+
                 }}
                 >
-                <Form>
-                    <div className="input-field">
-                        <label className="label" htmlFor="productName">Product Name</label>
-                        <Field
-                            className="field"
-                            id="productName"
-                            name="productName"
-                            placeholder="Notebook"
-                        />
-                    </div>
+                {({ errors, touched, isValidating }) => (
+                    <Form>
+                        <div className="input-field">
+                            <label className="label" htmlFor="productName">Product Name: </label>
+                            <Field
+                                className="field"
+                                id="productName"
+                                name="productName"
+                                placeholder="Notebook"
+                                validate={validateName}
+                            />
+                            <div className="error">
+                                {errors.productName && touched.productName && <div>{errors.productName}</div>}
+                            </div>
 
-                    <div className="input-field">
-                        <label className="label" htmlFor="productPrice">Product Price</label>
-                        <Field
-                            className="field"
-                            id="productPrice"
-                            name="productPrice"
-                            placeholder="20.99"
-                            validate={validatePrice}
-                        />
-                    </div>
-                    <button type="submit" className="submit-button" >Add Product</button>
-                </Form>
+                        </div>
+
+                        <div className="input-field">
+                            <label className="label" htmlFor="productPrice">Product Price: </label>
+                            <Field
+                                className="field"
+                                id="productPrice"
+                                name="productPrice"
+                                placeholder="20.99"
+                                validate={validatePrice}
+                            />
+                            <div className="error">
+                                {errors.productPrice && touched.productPrice && <div>{errors.productPrice}</div>}
+                            </div>
+                        </div>
+                        <button type="submit" className="submit-button" >Add Product</button>
+                    </Form>
+                )}
+
             </Formik>
         </div>
     );
