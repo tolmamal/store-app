@@ -16,8 +16,8 @@ const NewProduct = () => {
     };
 
     const validateName = (value) => {
-      let error = ' ';
-      let specialChars = /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+      let error = '';
+      let specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
       if (!value) {
           error = 'Error occurred: product name is required!';

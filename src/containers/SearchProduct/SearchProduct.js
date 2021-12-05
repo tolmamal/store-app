@@ -43,12 +43,12 @@ const SearchProduct = () => {
             error = 'Error occurred: product name is required!';
         }
         else {
-            if (!(value.match("^[a-zA-Z]([^A-Za-z0-9])*"))) {
-                error = 'Error occurred: product name must start with a letter!';
-            }
-            if (specialChars.test(value)) {
-                error = 'Error occurred: no special chars!';
-            }
+            // if (!(value.match("^[a-zA-Z]([^A-Za-z0-9])*"))) {
+            //     error = 'Error occurred: product name must start with a letter!';
+            // }
+            // if (specialChars.test(value)) {
+            //     error = 'Error occurred: no special chars!';
+            // }
 
         }
 
@@ -59,14 +59,11 @@ const SearchProduct = () => {
         // const result = await submitSearchAllProducts('car');
         const result = await submitSearchAllProducts();
         setResults(result.data);
-        console.log("result: " + JSON.stringify(result));
 
         console.log({result});
     };
 
     const submitSearch = async (values) => {
-        console.log("values stringify: " + JSON.stringify(values));
-
         const result = await submitSearchProduct(values.productName);
         setResults(result.data);
     }
