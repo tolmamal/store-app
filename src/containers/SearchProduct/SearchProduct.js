@@ -43,12 +43,12 @@ const SearchProduct = () => {
             error = 'Error occurred: product name is required!';
         }
         else {
-            // if (!(value.match("^[a-zA-Z]([^A-Za-z0-9])*"))) {
-            //     error = 'Error occurred: product name must start with a letter!';
-            // }
-            // if (specialChars.test(value)) {
-            //     error = 'Error occurred: no special chars!';
-            // }
+            if (!(value.match("^[a-zA-Z]([^A-Za-z0-9])*"))) {
+                error = 'Error occurred: product name must start with a letter!';
+            }
+            if (specialChars.test(value)) {
+                error = 'Error occurred: no special chars!';
+            }
 
         }
 

@@ -46,7 +46,6 @@ const NewProduct = () => {
         return error;
     };
 
-    //TODO: add msg to the user - on success
     const Basic = () => (
         <div className="basic">
             <Formik
@@ -57,6 +56,7 @@ const NewProduct = () => {
                 onSubmit={async (values) => {
                     await submitNewProduct(values.productName, values.productPrice);
                     console.log("product added successfully");
+                    alert("Product added successfully");
 
                 }}
                 >
