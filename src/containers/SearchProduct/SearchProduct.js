@@ -56,7 +56,6 @@ const SearchProduct = () => {
     };
 
     const submitGetAll = async () => {
-        // const result = await submitSearchAllProducts('car');
         const result = await submitSearchAllProducts();
         setResults(result.data);
 
