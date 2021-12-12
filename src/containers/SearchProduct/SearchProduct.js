@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Formik, Field, Form } from "formik";
 import {submitSearchAllProducts, submitSearchProduct} from "../../api";
+import TopNav from "../Home/Nav/TopNav";
 import "./SearchProduct.css";
 
 
@@ -100,6 +101,7 @@ const SearchProduct = () => {
 
     return (
         <div>
+            <TopNav/>
             <p className="main-title">Search Product Page</p>
             <Basic />
             {/*<button className="test-button" onClick={submitGetAll}>Search For All Products</button>*/}

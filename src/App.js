@@ -1,8 +1,9 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './containers/Home/Home';
 import NewProduct from './containers/NewProduct/NewProduct';
 import SearchProduct from './containers/SearchProduct/SearchProduct';
+
 
 import './App.css';
 

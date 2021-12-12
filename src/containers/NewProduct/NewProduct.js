@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {submitNewProduct} from "../../api";
 import { Formik, Field, Form } from "formik";
+import TopNav from "../Home/Nav/TopNav";
 import "./NewProduct.css";
 
 
@@ -100,6 +101,7 @@ const NewProduct = () => {
 
     return (
         <div className="main-form">
+            <TopNav/>
             <p className="form-title">New Product Page</p>
             <div>
                 <Basic />
