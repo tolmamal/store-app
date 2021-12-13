@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67143853-1686-4349-bb98-0bb07ca7abb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Tal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Tal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Nav/TopNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Nav/TopNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/NewProduct/NewProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/NewProduct/NewProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/SearchProduct/SearchProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/SearchProduct/SearchProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +157,8 @@
       <workItem from="1638522369397" duration="13854000" />
       <workItem from="1638564160045" duration="1846000" />
       <workItem from="1638612451298" duration="27422000" />
-      <workItem from="1639314126835" duration="6596000" />
+      <workItem from="1639314126835" duration="7621000" />
+      <workItem from="1639388425068" duration="412000" />
     </task>
     <servers />
   </component>

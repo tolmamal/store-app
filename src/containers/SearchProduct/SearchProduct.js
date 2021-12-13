@@ -104,7 +104,6 @@ const SearchProduct = () => {
             <TopNav/>
             <p className="main-title">Search Product Page</p>
             <Basic />
-            {/*<button className="test-button" onClick={submitGetAll}>Search For All Products</button>*/}
             <ProductsList data={results}/>
         </div>
 
